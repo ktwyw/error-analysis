@@ -11,7 +11,10 @@ authors:
     email: yanwei.wang@nu.edu.kz
     affiliation: "Department of Chemical and Materials Engineering, School of Engineering, Nazarbayev University, Astana, Kazakhstan"
 repository-code: "https://github.com/ktwyw/error-analysis"
-license: MIT
+url: "https://ktwyw.github.io/error-analysis/"
+license:
+  - MIT
+  - CC-BY-4.0
 keywords:
   - error analysis
   - uncertainty propagation

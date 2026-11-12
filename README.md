@@ -110,11 +110,17 @@ print(ep.format_budget(rows))              # the diameter carries 88 % of the va
 samples = ep.monte_carlo(density, x, u)    # Monte Carlo check of the linear result
 ```
 
-**A fit with its covariance:**
+**A straight-line fit with its covariance** — simulated data, so the true line ($y = 2 + 0.5x$) is known:
 
 ```python
-fit = ep.linear_fit(x_data, y_data, sigma_y)
-print(fit.slope, fit.u_slope, fit.correlation)           # slope, its uncertainty, corr(a, b)
+rng = np.random.default_rng(1)
+x = np.linspace(0, 10, 11)
+y = 2.0 + 0.5 * x + rng.normal(0, 0.3, x.size)          # readings with sigma = 0.3
+
+fit = ep.linear_fit(x, y, np.full(x.size, 0.3))
+print(ep.format_result(fit.slope, fit.u_slope))          # 0.497 ± 0.029
+print(ep.format_result(fit.intercept, fit.u_intercept))  # 2.08 ± 0.17
+print(round(fit.correlation, 2))                         # -0.85: slope and intercept are correlated
 ```
 
 ## Gallery
