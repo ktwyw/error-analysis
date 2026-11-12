@@ -1,0 +1,17 @@
+{
+  "model": "Lennard-Jones, truncated and shifted",
+  "N": 256,
+  "density": 0.8,
+  "box_length": 6.839903786706787,
+  "r_cut": 2.5,
+  "dt": 0.005,
+  "n_equil": 5000,
+  "n_relax": 2000,
+  "n_prod": 40000,
+  "sample_every": 1,
+  "n_msd_blocks": 10,
+  "msd_block_length": 20.0,
+  "msd_every": 10,
+  "seed": 20261112,
+  "units": "reduced Lennard-Jones units"
+}

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite it as below."
+type: software
+title: "Error analysis and propagation across disciplines: notebooks, examples and the errprop module"
+version: 0.3.0
+date-released: 2026-11-12
+authors:
+  - family-names: Wang
+    given-names: Yanwei
+    orcid: "https://orcid.org/0000-0002-8488-9833"
+    email: yanwei.wang@nu.edu.kz
+    affiliation: "Department of Chemical and Materials Engineering, School of Engineering, Nazarbayev University, Astana, Kazakhstan"
+repository-code: "https://github.com/ktwyw/error-analysis"
+license: MIT
+keywords:
+  - error analysis
+  - uncertainty propagation
+  - measurement uncertainty
+  - least-squares fitting
+  - block averaging
+  - maximum likelihood
+  - counting statistics
+  - numerical error
+  - education
+abstract: >-
+  An open book of 26 executed Jupyter notebooks, with a small Python module,
+  on evaluating, propagating and reporting uncertainty: measurement and
+  instruments, probability and statistics, linear, nonlinear and
+  maximum-likelihood fitting, correlated data, sensitivity analysis and
+  numerical error, with worked examples from physics, chemistry, chemical
+  and mechanical engineering, nuclear physics, analytical chemistry and
+  molecular simulation. Every chapter is mapped to the standard textbooks
+  and to the GUM.

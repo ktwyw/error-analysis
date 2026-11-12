@@ -1,0 +1,62 @@
+version: 1
+project:
+  title: Error analysis and propagation across disciplines
+  description: Evaluating, propagating and reporting uncertainty, with executed notebooks and examples.
+  keywords: [error analysis, uncertainty propagation, measurement uncertainty, least squares, maximum likelihood]
+  authors:
+    - name: Yanwei Wang
+      orcid: 0000-0002-8488-9833
+      affiliations:
+        - School of Engineering, Nazarbayev University
+  github: https://github.com/ktwyw/error-analysis
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  exclude:
+    - README.md
+    - DATA_LICENSE.md
+    - _build/**
+  toc:
+    - file: docs/intro.md
+    - file: docs/reading_guide.md
+    - title: "Part I. Measurement and uncertainty"
+      children:
+        - file: notebooks/part1_measurement/01_measurement_and_uncertainty.ipynb
+        - file: notebooks/part1_measurement/02_measuring_instruments.ipynb
+        - file: notebooks/part1_measurement/03_propagation_of_uncertainty.ipynb
+        - file: notebooks/part1_measurement/04_repeated_measurements.ipynb
+    - title: "Part II. Probability and statistics"
+      children:
+        - file: notebooks/part2_probability_statistics/05_probability_distributions.ipynb
+        - file: notebooks/part2_probability_statistics/06_counting_statistics.ipynb
+        - file: notebooks/part2_probability_statistics/07_estimators_and_maximum_likelihood.ipynb
+        - file: notebooks/part2_probability_statistics/08_hypothesis_tests.ipynb
+        - file: notebooks/part2_probability_statistics/09_outliers_and_data_rejection.ipynb
+        - file: notebooks/part2_probability_statistics/10_monte_carlo_methods.ipynb
+    - title: "Part III. Data analysis"
+      children:
+        - file: notebooks/part3_data_analysis/11_fitting_a_straight_line.ipynb
+        - file: notebooks/part3_data_analysis/12_covariance_and_limits_of_linearisation.ipynb
+        - file: notebooks/part3_data_analysis/13_fit_parameter_covariance.ipynb
+        - file: notebooks/part3_data_analysis/14_nonlinear_least_squares.ipynb
+        - file: notebooks/part3_data_analysis/15_maximum_likelihood_fitting.ipynb
+        - file: notebooks/part3_data_analysis/16_rules_of_thumb_tested.ipynb
+    - title: "Part IV. Advanced topics"
+      children:
+        - file: notebooks/part4_advanced/17_correlated_data_and_block_averaging.ipynb
+        - file: notebooks/part4_advanced/18_sensitivity_analysis_and_budgets.ipynb
+        - file: notebooks/part4_advanced/19_numerical_error.ipynb
+    - title: "Part V. Worked examples"
+      children:
+        - file: notebooks/part5_examples/20_pendulum_g.ipynb
+        - file: notebooks/part5_examples/21_falling_sphere_viscosity.ipynb
+        - file: notebooks/part5_examples/22_arrhenius_activation_energy.ipynb
+        - file: notebooks/part5_examples/23_md_lennard_jones.ipynb
+        - file: notebooks/part5_examples/24_radioactive_decay_counts.ipynb
+        - file: notebooks/part5_examples/25_calibration_curve_detection_limit.ipynb
+        - file: notebooks/part5_examples/26_tolerance_stack_up.ipynb
+    - file: docs/references.md
+site:
+  template: book-theme
+  options:
+    logo_text: Error analysis

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "errprop"
+version = "0.3.0"
+description = "Small, readable tools for error analysis and propagation; companion module to the error-analysis notebooks."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Yanwei Wang", email = "yanwei.wang@nu.edu.kz" }]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "scipy>=1.8", "matplotlib>=3.5"]
+
+[project.optional-dependencies]
+notebooks = ["jupyterlab", "nbconvert", "ipykernel"]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["errprop"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
